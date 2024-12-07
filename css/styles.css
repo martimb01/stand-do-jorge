@@ -48,8 +48,47 @@ html, body {
 .catalog {
    display: grid;
    grid-template-columns: repeat(5, 1fr); 
-   gap: 20px; 
+   gap: 10px; 
    margin: 20px;
-   border-style: dashed;
    background-color: #302d2d; 
+   border-radius: 8px;
+}
+
+
+/*Containers for the grid*/
+.catalog-item {
+   display: flex; /* Enable Flexbox */
+   flex-direction:column; /* Arrange children (img, h3, p) vertically */
+   border: 1px solid #ddd;
+   border-radius: 8px;
+   padding: 10px;
+   margin: 10px;
+   text-align: center;
+   background-color: white;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   position: relative; /* Allows content positioning if necessary */
+}
+
+/* Images stay at the top of the container */
+.catalog-item img {
+   width: 100%;
+   height: auto;
+   border-radius: 8px 8px 0 0;
+   margin-bottom: auto; /* Push image upwards in the flex layout */
+}
+
+/* Titles and descriptions are now at the bottom */
+.catalog-item h3 {
+   font-size: 1.2em;
+   margin: 5px 0;
+}
+
+.catalog-item p {
+   font-size: 0.9em;
+   color: #666;
+   margin: 0; /* Remove extra margin to keep content tidy */
+}
+
+.catalog-item:hover {
+   background-color: #252222;
 }
