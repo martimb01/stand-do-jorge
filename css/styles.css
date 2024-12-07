@@ -29,18 +29,27 @@ html, body {
    text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
+
 .navbar li a:hover {
    background-color: #252222;
 }
 
 .navbar .logo {
-   height: 63px; /* Adjust to your preferred height */
-   width: auto; /* Maintain aspect ratio */
-   vertical-align: middle; /* Align logo with text */
-   padding-right: 90px; /* Optional: Add padding if needed */
+   height: 63px; 
+   width: auto; 
+   vertical-align: middle; 
+   padding-right: 90px; 
 }
 
 .navbar .areaJ {
    float:right;
+}
+
+.catalog {
+   display: grid;
+   grid-template-columns: repeat(5, 1fr); 
+   gap: 20px; 
+   margin: 20px;
+   border-style: dashed;
+   background-color: #302d2d; 
 }
