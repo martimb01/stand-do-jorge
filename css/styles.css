@@ -1,0 +1,46 @@
+/* Remove default margin and padding from body and html */
+html, body {
+   margin: 0;
+   padding: 0;
+}
+
+
+.navbar {
+   list-style-type: none;
+   margin: 0;
+   padding:0;
+   overflow: hidden;
+   background-color: #4e0202;
+}
+
+.navbar li {
+   float: left;
+   padding: 0;
+  
+}
+
+.navbar li a {
+   display: block;
+   font-family: 'Courier New', Courier, monospace;
+   color: white;
+   text-align: center;
+   font-size: 20px;
+   padding: 20px 16px;
+   text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.navbar li a:hover {
+   background-color: #252222;
+}
+
+.navbar .logo {
+   height: 63px; /* Adjust to your preferred height */
+   width: auto; /* Maintain aspect ratio */
+   vertical-align: middle; /* Align logo with text */
+   padding-right: 90px; /* Optional: Add padding if needed */
+}
+
+.navbar .areaJ {
+   float:right;
+}
