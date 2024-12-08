@@ -2,6 +2,7 @@
 html, body {
    margin: 0;
    padding: 0;
+   background-color: #979393;
 }
 
 
@@ -64,21 +65,23 @@ html, body {
    padding: 10px;
    margin: 10px;
    text-align: center;
-   background-color: white;
+   background-color: rgb(59, 55, 55);
    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-   position: relative; /* Allows content positioning if necessary */
+   
 }
 
-/* Images stay at the top of the container */
+
 .catalog-item img {
    width: 100%;
    height: auto;
+   max-height: 300px;
    border-radius: 8px 8px 0 0;
    margin-bottom: auto; /* Push image upwards in the flex layout */
 }
 
 /* Titles and descriptions are now at the bottom */
 .catalog-item h3 {
+   color: white;
    font-size: 1.2em;
    margin: 5px 0;
 }
@@ -90,5 +93,16 @@ html, body {
 }
 
 .catalog-item:hover {
-   background-color: #252222;
+   border-color: #ff0000;
+   opacity: 100%;
+}
+
+.catalog-item ul {
+   padding-left: 0px;
+   list-style-type: none;
+   text-align: left;
+   background-color: grey;
+   border-radius: 4%;
+
+   
 }
